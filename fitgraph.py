@@ -4,7 +4,7 @@ import random
 import matplotlib.pyplot as plt
 plt.switch_backend('TkAgg')
 
-def add_usero():
+def add_user():
     conn = mysql.connector.connect(
         host="localhost",
         user="root",
@@ -83,8 +83,7 @@ def find_user_by_name(name):
     else:
         print("User not found!")
 
-    cursor.close()
-    conn.close()
+   
 
 def remove_all_users():
     conn = mysql.connector.connect(
@@ -525,8 +524,7 @@ def generate_dishes_and_select_random(weight_category):
 
 
 
-def add_user():
-    print("Adding user...")
+
 
 def find_user():
     user_name = input("Enter the name of the user you want to find: ")
